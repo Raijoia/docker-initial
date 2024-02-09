@@ -13,6 +13,8 @@ services:
       - "3000:3000"
     networks:
       - compose-bridge
+    depends_on:
+      - mongodb
 
 networks:
   compose-bridge:
